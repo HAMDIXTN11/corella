@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Corella Store 1.0.0\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: corella-store\n"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "All rights reserved"
+msgstr "Tous droits réservés"
+
+msgid "Luxury basics for every day"
+msgstr "Basics de luxe pour tous les jours"
+
+msgid "Minimal, elegant and made for Tunisia. Explore our newest arrivals for men and women."
+msgstr "Minimal, élégant et conçu pour la Tunisie. Découvrez nos nouveautés pour hommes et femmes."
+
+msgid "Shop Now"
+msgstr "Acheter maintenant"
+
+msgid "Best Sellers"
+msgstr "Meilleures ventes"
+
+msgid "New Arrivals"
+msgstr "Nouveautés"
+
+msgid "Shop by Category"
+msgstr "Acheter par catégorie"
+
+msgid "Men"
+msgstr "Hommes"
+
+msgid "Women"
+msgstr "Femmes"
+
+msgid "Accessories"
+msgstr "Accessoires"
+
+msgid "Customer Reviews"
+msgstr "Avis clients"
+
+msgid "Top quality and fast delivery in Tunis!"
+msgstr "Top qualité et livraison rapide à Tunis !"
+
+msgid "Elegant designs. I love the fabric."
+msgstr "Designs élégants. J'adore le tissu."
+
+msgid "Great prices and perfect fit."
+msgstr "Excellents prix et coupe parfaite."
+
+msgid "No content found."
+msgstr "Aucun contenu trouvé."
+
+msgid "Order via WhatsApp"
+msgstr "Commander via WhatsApp"
+
+msgid "Hello, I would like to order: %s (%s)"
+msgstr "Bonjour, je souhaite commander : %s (%s)"
