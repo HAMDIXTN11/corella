@@ -1,0 +1,36 @@
+{
+	"version": 2,
+	"settings": {
+		"color": {
+			"palette": [
+				{"slug": "background", "color": "#ffffff", "name": "Background"},
+				{"slug": "text", "color": "#0a0a0a", "name": "Text"},
+				{"slug": "muted", "color": "#6b7280", "name": "Muted"},
+				{"slug": "accent", "color": "#0a0a0a", "name": "Accent"}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "Manrope, system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', Arial",
+					"slug": "manrope",
+					"name": "Manrope"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "760px",
+			"wideSize": "1200px"
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "#ffffff",
+			"text": "#0a0a0a"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--manrope)",
+			"lineHeight": "1.6"
+		}
+	}
+}

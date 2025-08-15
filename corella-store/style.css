@@ -1,0 +1,126 @@
+/*
+Theme Name: Corella Store
+Theme URI: https://example.com/corella-store
+Author: Corella Team
+Author URI: https://example.com
+Description: Minimal, elegant, bilingual (Arabic RTL + French) WooCommerce theme for a modern clothing store in Tunisia. Fast, responsive, with WhatsApp ordering.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.6
+Requires PHP: 7.4
+Text Domain: corella-store
+Domain Path: /languages
+Tags: e-commerce, woocommerce, minimal, rtl-language-support, responsive-layout, accessibility-ready
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* CSS Variables */
+:root {
+	--color-bg: #ffffff;
+	--color-text: #0a0a0a;
+	--color-muted: #6b7280;
+	--color-border: #e5e7eb;
+	--color-accent: #0a0a0a;
+	--color-accent-contrast: #ffffff;
+	--max-w: 1200px;
+	--radius: 8px;
+	--shadow-sm: 0 2px 8px rgba(0,0,0,.05);
+	--shadow-md: 0 8px 24px rgba(0,0,0,.08);
+}
+
+/* Reset-ish */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+	margin: 0;
+	background: var(--color-bg);
+	color: var(--color-text);
+	font-family: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+	line-height: 1.6;
+	font-size: 16px;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+button,
+input,
+select,
+textarea { font-family: inherit; font-size: 1rem; }
+
+/* Layout */
+.container { width: 100%; max-width: var(--max-w); margin-left: auto; margin-right: auto; padding-left: 20px; padding-right: 20px; }
+.section { padding: 56px 0; }
+.section--tight { padding: 32px 0; }
+.grid { display: grid; gap: 24px; }
+.grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 1024px) { .grid--4 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 768px) { .grid--3, .grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .grid--2, .grid--3, .grid--4 { grid-template-columns: 1fr; } }
+
+/* Header */
+.header { position: sticky; top: 0; z-index: 50; backdrop-filter: saturate(120%) blur(6px); background: rgba(255,255,255,.8); border-bottom: 1px solid var(--color-border); }
+.header__inner { display: flex; align-items: center; justify-content: space-between; height: 70px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: 0.02em; }
+.brand__logo { width: 36px; height: 36px; border: 2px solid var(--color-text); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px; }
+.brand__name { font-size: 18px; text-transform: uppercase; }
+
+.nav { display: flex; align-items: center; gap: 20px; }
+.nav a { color: var(--color-text); opacity: .8; }
+.nav a:hover { opacity: 1; }
+.nav__toggle { display: none; background: transparent; border: none; }
+@media (max-width: 980px) {
+	.nav__toggle { display: inline-flex; }
+	.nav--primary { position: fixed; inset: 70px 0 0 0; background: rgba(255,255,255,.98); transform: translateY(-100%); transition: transform .3s ease; padding: 24px; flex-direction: column; gap: 16px; }
+	.nav--primary.is-open { transform: translateY(0); }
+}
+
+/* Hero */
+.hero { display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 36px; padding: 48px 0; }
+.hero__title { font-size: clamp(28px, 5vw, 54px); line-height: 1.1; margin: 0 0 12px; }
+.hero__subtitle { color: var(--color-muted); margin: 0 0 20px; font-size: 18px; }
+.hero__cta { display: inline-flex; align-items: center; gap: 10px; padding: 12px 20px; background: var(--color-accent); color: var(--color-accent-contrast); border-radius: 999px; box-shadow: var(--shadow-sm); transition: transform .15s ease, box-shadow .15s ease; }
+.hero__cta:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); }
+.hero__media { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-md); min-height: 280px; background: #f6f6f6; }
+@media (max-width: 980px) { .hero { grid-template-columns: 1fr; padding-top: 24px; } }
+
+/* Cards */
+.card { display: flex; flex-direction: column; gap: 8px; border: 1px solid var(--color-border); border-radius: var(--radius); overflow: hidden; background: #fff; box-shadow: var(--shadow-sm); }
+.card__media { aspect-ratio: 4 / 5; background: #f3f4f6; position: relative; }
+.card__body { padding: 12px; }
+.card__title { font-weight: 600; font-size: 16px; margin: 0; }
+.card__price { color: var(--color-text); font-weight: 700; }
+.card__meta { color: var(--color-muted); font-size: 14px; }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 10px 16px; border-radius: 999px; border: 1px solid var(--color-text); transition: background .15s ease; }
+.btn--dark { background: var(--color-text); color: #fff; border-color: var(--color-text); }
+.btn--light { background: #fff; color: var(--color-text); border-color: var(--color-border); }
+.btn--link { border: none; padding: 0; }
+
+/* Footer */
+.footer { border-top: 1px solid var(--color-border); padding: 36px 0; color: var(--color-muted); }
+.footer__top { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 24px; }
+.footer__bottom { display: flex; align-items: center; justify-content: space-between; padding-top: 16px; margin-top: 16px; border-top: 1px solid var(--color-border); }
+@media (max-width: 980px) { .footer__top { grid-template-columns: 1fr; } .footer__bottom { flex-direction: column; gap: 12px; } }
+
+/* WhatsApp Floating Button */
+.whatsapp-fab { position: fixed; z-index: 60; right: 18px; bottom: 18px; width: 56px; height: 56px; border-radius: 50%; background: #25D366; color: #fff; display: inline-flex; align-items: center; justify-content: center; box-shadow: var(--shadow-md); }
+.whatsapp-fab:hover { filter: brightness(1.05); }
+
+/* Animations */
+.fade-in-up { opacity: 0; transform: translateY(12px); animation: fadeInUp .6s ease forwards; }
+@keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+
+/* WooCommerce basic tweaks */
+.woocommerce .products .product .button { border-radius: 999px; }
+.woocommerce div.product .product_title { font-size: 28px; }
+.woocommerce div.product p.price, .woocommerce div.product span.price { font-weight: 700; }
+.woocommerce ul.products li.product .price { font-weight: 700; }
+
+/* Utilities */
+.u-muted { color: var(--color-muted); }
+.u-center { text-align: center; }
+.u-hide-mobile { display: block; }
+@media (max-width: 768px) { .u-hide-mobile { display: none; } }

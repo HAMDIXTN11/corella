@@ -1,0 +1,73 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Corella Store 1.0.0\n"
+"POT-Creation-Date: 2025-08-15 00:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: AI\n"
+"X-Domain: corella-store\n"
+
+#: header.php
+msgid "Menu"
+msgstr ""
+
+#: footer.php
+msgid "All rights reserved"
+msgstr ""
+
+#: home.php
+msgid "Luxury basics for every day"
+msgstr ""
+
+#: home.php
+msgid "Minimal, elegant and made for Tunisia. Explore our newest arrivals for men and women."
+msgstr ""
+
+#: home.php
+msgid "Shop Now"
+msgstr ""
+
+#: home.php
+msgid "Best Sellers"
+msgstr ""
+
+#: home.php
+msgid "New Arrivals"
+msgstr ""
+
+#: home.php
+msgid "Shop by Category"
+msgstr ""
+
+#: home.php
+msgid "Men"
+msgstr ""
+
+#: home.php
+msgid "Women"
+msgstr ""
+
+#: home.php
+msgid "Accessories"
+msgstr ""
+
+#: home.php
+msgid "Customer Reviews"
+msgstr ""
+
+#: home.php
+msgid "Top quality and fast delivery in Tunis!"
+msgstr ""
+
+#: home.php
+msgid "Elegant designs. I love the fabric."
+msgstr ""
+
+#: home.php
+msgid "Great prices and perfect fit."
+msgstr ""
+
+#: index.php
+msgid "No content found."
+msgstr ""

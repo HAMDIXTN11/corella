@@ -1,0 +1,10 @@
+/* RTL overrides */
+:root { direction: rtl; }
+body { direction: rtl; }
+.header__inner { flex-direction: row-reverse; }
+.brand { flex-direction: row-reverse; }
+.nav { flex-direction: row-reverse; }
+.nav--primary { text-align: right; }
+.hero { direction: rtl; }
+.card__body { text-align: right; }
+.footer__bottom { flex-direction: row-reverse; }
